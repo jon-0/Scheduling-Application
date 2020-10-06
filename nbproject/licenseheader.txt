@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Desktop Scheduling Application for C195
+${licensePrefix}@author Jonathan Otano <jotano1@wgu.edu> ${licensePrefix}
+<#if licenseLast??>
+${licenseLast}
+</#if>

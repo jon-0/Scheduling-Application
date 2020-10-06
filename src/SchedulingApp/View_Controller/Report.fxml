@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?> 
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SchedulingApp.View_Controller.ReportController">
+   <children>
+      <RadioButton fx:id="tbApptTypes" layoutX="14.0" layoutY="369.0" mnemonicParsing="false" onAction="#getApptTypes" text="Appointment Types" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="15.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgReports" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="tbSchedule" layoutX="150.0" layoutY="368.0" mnemonicParsing="false" onAction="#getSchedule" text="Consultant Schedule" toggleGroup="$tgReports" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="tbCustomer" layoutX="292.0" layoutY="368.0" mnemonicParsing="false" onAction="#getCustomerList" text="Customer List" toggleGroup="$tgReports" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <AnchorPane layoutX="15.0" layoutY="15.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <TextArea fx:id="txtReportField" editable="false" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="15.0" layoutY="311.0" text=" Select Report to Run:" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnExit" layoutX="333.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleExitAction" prefHeight="25.0" prefWidth="50.0" text="Exit" textAlignment="CENTER" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
