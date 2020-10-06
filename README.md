@@ -6,7 +6,7 @@ This application is a scheduling application using MySQL for data persistence. I
 
 The goal of the project was to demonstrate proficiency in database connections, lambda functions, exception handing and assertions, localization, and logging.
 
-The application was built using NetBeans and SceneBuilder.
+The application was built using NetBeans IDE, Java, and JavaFX SceneBuilder.
 
 **Scenario:**
 
